@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+
+}
+.main{
+   display: flex;
+    
+   height: 100vh;
+}
+.sidebar{
+display: flex;
+flex-direction: column;
+background-color: rgba(8, 44, 90, 0.885);
+color: white;
+width: 250px;
+
+
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo h1{
+    font-size: 3rem;
+    font-family: "Roboto", sans-serif;
+
+}
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    line-height: 3.8rem;
+}
+
+.menu ul  li{
+    list-style: none;
+    cursor: pointer;
+}
+.menu ul  li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    font-family: "Roboto", sans-serif;
+}
+.main-bar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    overflow: scroll;
+    background-color: #f2f2f2;
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 2rem;
+    background-color: #ffffff;
+
+}
+form.inputs{
+    width: 50 rem;
+    height: 30px;
+    margin: 20px;
+    border-radius: 0.4rem;
+    border: 1px solid #9b9393;
+}
+form i{
+ background-color: #c1bdbd;
+padding: 0.8rem;
+border-radius: 0.4rem;
+color: #ffffff;
+}
+.search-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+.icons 
+{
+
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 1rem; 
+    background-color: #9b9393;
+    padding: 1rem;
+    color:white;
+    border-radius: 50%;
+  }
+  
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Content Layout - Flexbox */
+.content {
+    display: flex;
+    justify-content: space-between; /* Split left and right */
+    margin: 20px auto;
+    padding: 10px;
+    gap: 20px;
+}
+
+/* Left Section (Dashboard & Table) */
+.left-section {
+    flex: 2; 
+}
+
+.dashboard h1, .table h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Dashboard Boxes Row 1 */
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row1 .col-md-3, .row2 .col-md-4 {
+    flex: 1;
+    margin: 0 5px;
+}
+
+
+
+.service-box1{
+    color: green;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+}
+.service-box1 h6{
+color: rgba(0, 0, 0, 0.562);
+text-align: left;
+}
+
+.service-box2{
+    color:darkcyan;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+} 
+.service-box2 h6{
+    color: rgba(0, 0, 0, 0.562);
+    text-align: left;
+}
+.service-box3{
+    color: yellow;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+}
+.service-box3 h6{
+    color: rgba(0, 0, 0, 0.562);
+    text-align: left;
+}
+.service-box4{
+    color: green;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+}
+.service-box4 h6{
+    color: rgba(0, 0, 0, 0.562);
+    text-align: left;
+}
+.service-box5{
+    color: red;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+  text-align: end;
+   
+}
+.service-box5 h6{
+    color: rgba(0, 0, 0, 0.562);
+    text-align: left;
+}
+
+.service-box6{
+    color: yellow;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: right;
+}
+.service-box6 h6{
+    color: rgba(0, 0, 0, 0.562);
+    text-align:left;
+}
+
+.service-box {
+    background:rgba(8, 44, 90, 0.885) ;
+    color: white;
+    text-align: center;
+}
+
+i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+/* Table Styling */
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.table td i {
+    font-size: 14px;
+}
+
+
+
+/* Right Section (Chart & To-Do List) */
+.right-section {
+    flex: 1; /* Takes less space */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chart, .to-do {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart h3, .to-do h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.to-do ol {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.to-do li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
